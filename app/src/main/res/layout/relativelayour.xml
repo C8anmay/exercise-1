@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+<Button
+    android:id="@+id/b1"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:textColor="#E91E63"
+    android:text="Rose"
+    android:textSize="@dimen/di"
+    />
+    <Button
+        android:id="@+id/b2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/di"
+        android:text="Orange"
+        android:textColor="#EA3F09"
+        android:layout_below="@+id/b1"/>
+    <Button
+        android:id="@+id/b3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/R"
+        android:textColor="@color/colorLike"
+        android:textSize="@dimen/di"
+        android:layout_toRightOf="@+id/b2"
+        android:layout_below="@+id/b1"
+
+        />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:layout_below="@+id/b3"
+        android:layout_marginTop="9dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/tenor" />
+    <CalendarView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/b3"
+        android:pointerIcon="cell"
+        android:outlineAmbientShadowColor="@color/colorLike"
+        />
+
+
+</RelativeLayout>

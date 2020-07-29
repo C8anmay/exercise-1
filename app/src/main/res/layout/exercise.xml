@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:src="@drawable/pagoda" />
+
+    <RelativeLayout
+        android:id="@+id/relative"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/t1"
+            android:layout_width="307dp"
+            android:layout_height="54dp"
+            android:text="Golden land of Myanmar"
+            android:fontFamily="sans-serif-black"
+            android:textColor="#860E9A"
+            android:textSize="27dp" />
+
+        <ImageView
+            android:id="@+id/star"
+            android:layout_width="47dp"
+            android:layout_height="47dp"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@id/t1"
+            android:src="@drawable/star" />
+
+        <TextView
+            android:layout_width="58dp"
+            android:layout_height="55dp"
+            android:layout_marginLeft="13dp"
+            android:layout_toRightOf="@id/star"
+            android:text="41"
+            android:textSize="30dp"
+            android:textColor="#860E9A"/>
+        <TextView
+            android:id="@+id/t2"
+            android:layout_width="wrap_content"
+            android:layout_height="80dp"
+            android:layout_below="@+id/t1"
+            android:text="Yangon,Myanmar"
+            android:fontFamily="serif-monospace"
+            android:textColor="#FFC907"
+            android:textSize="27dp" />
+
+        <LinearLayout
+            android:id="@+id/lin1"
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:layout_below="@+id/t2"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="102dp"
+                android:layout_height="50dp"
+                android:layout_below="@+id/t2"
+                android:src="@drawable/ph" />
+
+            <ImageView
+                android:layout_width="109dp"
+                android:layout_height="55dp"
+                android:src="@drawable/router" />
+
+            <ImageView
+                android:layout_width="114dp"
+                android:layout_height="50dp"
+                android:src="@drawable/share" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/line2"
+            android:layout_width="match_parent"
+            android:layout_height="67dp"
+            android:layout_below="@id/lin1"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="104dp"
+                android:layout_height="50dp"
+                android:text="CALL"
+                android:textColor="@color/green"
+                android:textSize="@dimen/di" />
+
+            <TextView
+                android:layout_width="109dp"
+                android:layout_height="55dp"
+                android:text="ROUTE"
+                android:textColor="@color/green"
+                android:textSize="@dimen/di" />
+
+            <TextView
+                android:layout_width="114dp"
+                android:layout_height="55dp"
+                android:text="SHARE"
+                android:textColor="@color/green"
+                android:textSize="@dimen/di" />
+        </LinearLayout>
+        <TextView
+            android:layout_below="@id/line2"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="The Shwedagon Pagoda, officially named Shwedagon Zedi Daw and also known as the Great Dagon Pagoda and the Golden Pagoda, is a gilded stupa located in Yangon, Myanmar. The Shwedagon is the most sacred Buddhist pagoda in Myanmar, as it is believed to contain relics of the four previous Buddhas of the present kalpa."/>
+    </RelativeLayout>
+</LinearLayout>
